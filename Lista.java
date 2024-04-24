@@ -13,7 +13,6 @@ public class  lista{
             this.wineServings = wineServings;
         }
 
-        @Override
         public String toString() {
             return name + ": " + wineServings;
         }
