@@ -13,7 +13,7 @@ public class  lista{
             this.wineServings = wineServings;
         }
 
-        
+        @Override
         public String toString() {
             return name + ": " + wineServings;
         }
@@ -217,10 +217,8 @@ public class  lista{
         countries.add(new Country("Zambia", 4));
         countries.add(new Country("Zimbabwe", 4));
 
-        // Ordenar os países pelo consumo de vinho (do menor para o maior)
         countries.sort(Comparator.comparingInt(c -> c.wineServings));
 
-        // Imprimir os países ordenados pelo consumo de vinho
         for (Country country : countries) {
             System.out.println(country);
         }
